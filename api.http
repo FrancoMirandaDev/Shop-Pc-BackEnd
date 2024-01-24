@@ -1,0 +1,24 @@
+###Traer todos los Datos
+GET http://localhost:9000/
+
+###Sign Up Users
+POST http://localhost:9000/signup
+Content-Type: application/json
+
+{
+  "user_handle": "@paola1",
+  "user_password": "kakas",
+  "email_address": "paola1@example.com",
+  "first_name": "Juan",
+  "last_name": "Suarez",
+  "phonenumber": 125454853 
+}
+
+###Login Users
+POST http://localhost:9000/login
+Content-Type: application/json
+
+{
+  "user_handle": "@paola1",
+  "user_password": "kakas"
+}
