@@ -1,6 +1,12 @@
 # Shop PC (Server)
 
-This server integrates APIs, including Stripe and Mercado Pago, to facilitate secure credit card transactions for your purchases. Additionally, the project enables user validation during sign-up and login and stores user information in a database (SQL).
+This server integrates APIs, including **Stripe** and **Mercado Pago**, to facilitate secure credit card transactions for your purchases. Additionally, the project enables user validation during sign-up and login and stores user information in a database (SQL).
+
+## Tech Stack
+
+**JavaScript, Node Js ,Express ,SQL** .
+
+Stripe and Mercado Pago APIs
 
 ## Run Locally
 
