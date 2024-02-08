@@ -3,6 +3,6 @@ import { indexController } from "../controllers/index.controller.js";
 
 const router = Router();
 
-router.get("/", indexController);
+router.get("/api", indexController);
 
 export default router;
