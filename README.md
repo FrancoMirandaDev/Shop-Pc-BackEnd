@@ -4,7 +4,7 @@ This server integrates APIs, including **Stripe** and **Mercado Pago**, to facil
 
 ## Tech Stack
 
-JavaScript, Node Js ,Express ,SQL .
+JavaScript, Node Js ,Express ,SQL ,Swagger
 
 Stripe and Mercado Pago APIs
 
