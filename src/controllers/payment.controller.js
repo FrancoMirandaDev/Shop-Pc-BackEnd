@@ -1,8 +1,10 @@
-import { stripe } from "../helper/Methods_Payments.js";
-
+import { stripe, MercadoPago } from "../helper/Methods_Payments.js";
 export const PaymentControllerStripe = async (req, res) => {
+  // Array with products
   const { cartItems } = req.body;
   console.log(cartItems);
+
+  // Create a checkout session
   const session = await stripe.checkout.sessions.create({
     line_items: [
       {
@@ -19,11 +21,23 @@ export const PaymentControllerStripe = async (req, res) => {
 };
 
 export const PaymentControllerMercado = async (req, res) => {
-  console.log("Paso por mercado pago controller");
-  const products = await stripe.products.list();
+  // Array with products
+  const { cartItems } = req.body;
+  console.log(cartItems);
 
-  res.status(200).send({
-    message: "List of Products in Mercado Pago",
-    products: products.data.map((product) => product.name),
+  // Create a checkout session
+  const preference = MercadoPago();
+  const result = await preference.create({
+    body: {
+      items: [
+        {
+          title: "Samsung Galaxy Book 3",
+          quantity: 1,
+          unit_price: 100,
+        },
+      ],
+    },
   });
+
+  res.send({ url: result.init_point });
 };
