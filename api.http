@@ -7,7 +7,7 @@ Content-Type: application/json
 
 {
   "user_handle": "@paola1",
-  "user_password": "kakas",
+  "user_password": "123456789",
   "email_address": "paola1@example.com",
   "first_name": "Juan",
   "last_name": "Suarez",
@@ -20,5 +20,5 @@ Content-Type: application/json
 
 {
   "user_handle": "@paola1",
-  "user_password": "kakas"
+  "user_password": "123456789"
 }
