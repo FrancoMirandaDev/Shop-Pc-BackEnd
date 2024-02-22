@@ -41,7 +41,7 @@ class User {
   }
 
   static async get(user_handle) {
-    // Implementar la lógica para obtener un usuario
+    // Obtener un usuario mediante el user_handle
     try {
       const user = await db.query(
         `SELECT * FROM users WHERE user_handle = ?;`,
