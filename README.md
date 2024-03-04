@@ -4,9 +4,13 @@ This server integrates APIs, including **Stripe** and **Mercado Pago**, to facil
 
 ## Tech Stack
 
-JavaScript, Node Js ,Express ,SQL ,Swagger
+JavaScript, Node Js ,Express ,SQL ,Swagger,Docker
 
 Stripe and Mercado Pago APIs
+
+## Screenshots
+
+![App Screenshot](images/Swagger-Doc.png)
 
 ## Run Locally
 
